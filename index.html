@@ -1,95 +1,102 @@
-<!DOCTYPE html>
-<html lang="id">
+          <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halo! ✨</title>
+    <title>Hello There! ✨</title>
     <style>
-        /* Gaya Dasar */
+        /* Basic Setup */
         body {
-            background-color: #fff5f8; /* Pink pastel sangat muda */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff0f5; /* Lavender Blush */
+            font-family: 'Quicksand', 'Segoe UI', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            color: #555;
+            color: #5d5d5d;
         }
 
-        /* Kartu Utama */
+        /* The Cute Card */
         .card {
-            background-color: white;
+            background: white;
             padding: 40px;
-            border-radius: 30px;
-            box-shadow: 0 10px 25px rgba(255, 182, 193, 0.3);
+            border-radius: 40px;
+            box-shadow: 0 15px 35px rgba(255, 182, 193, 0.2);
             text-align: center;
-            max-width: 350px;
-            border: 4px solid #ffe4e1; /* Misty Rose */
-            animation: bounceIn 1.2s ease-out;
+            max-width: 320px;
+            border: 5px solid #ffffff;
+            outline: 2px solid #ffdae9;
+            transition: transform 0.3s ease;
+            animation: float 3s ease-in-out infinite;
         }
 
-        /* Avatar atau Ikon Bulat */
-        .avatar {
-            width: 100px;
-            height: 100px;
-            background-color: #ffdae0;
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Avatar Circle */
+        .icon-circle {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, #ffdeed 0%, #ffafbd 100%);
             border-radius: 50%;
             margin: 0 auto 20px;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 50px;
-            border: 3px solid white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            font-size: 45px;
+            box-shadow: 0 8px 15px rgba(255, 175, 189, 0.3);
         }
 
         h1 {
-            font-size: 24px;
-            color: #ff8fa3; /* Soft Pink */
+            font-size: 28px;
+            color: #ff8fa3;
             margin-bottom: 10px;
+            letter-spacing: -0.5px;
         }
 
         p {
             font-size: 16px;
-            line-height: 1.5;
-            margin-bottom: 25px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #888;
         }
 
-        /* Tombol Imut */
-        .btn {
+        /* Bubbly Button */
+        .cute-btn {
             background-color: #ffb6c1;
             color: white;
-            padding: 12px 25px;
+            padding: 14px 30px;
             text-decoration: none;
-            border-radius: 50px;
+            border-radius: 30px;
             font-weight: bold;
             display: inline-block;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 5px 15px rgba(255, 182, 193, 0.4);
         }
 
-        .btn:hover {
+        .cute-btn:hover {
             background-color: #ff9fb0;
-            transform: scale(1.05);
-            box-shadow: 0 6px 20px rgba(255, 182, 193, 0.6);
-        }
-
-        /* Animasi Muncul */
-        @keyframes bounceIn {
-            0% { transform: scale(0.5); opacity: 0; }
-            70% { transform: scale(1.05); }
-            100% { transform: scale(1); opacity: 1; }
+            padding: 14px 40px; /* Expands slightly on hover */
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <div class="avatar">🌸</div>
-        <h1>Halo, Teman!</h1>
-        <p>Selamat datang di halaman kecilku yang penuh warna. Semoga harimu menyenangkan dan penuh kebahagiaan! ✨</p>
-        <a href="#" class="btn">Klik Aku! 🍬</a>
+        <div class="icon-circle">✨</div>
+        <h1>Hello, Sweetie!</h1>
+        <p>Sending you a little bit of sunshine and sparkles today. Stay amazing!</p>
+        <a href="#" class="cute-btn">Click for Joy 🍬</a>
     </div>
 
 </body>
