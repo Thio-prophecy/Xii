@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halo! ✨</title>
+    <style>
+        /* Gaya Dasar */
+        body {
+            background-color: #fff5f8; /* Pink pastel sangat muda */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #555;
+        }
+
+        /* Kartu Utama */
+        .card {
+            background-color: white;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 10px 25px rgba(255, 182, 193, 0.3);
+            text-align: center;
+            max-width: 350px;
+            border: 4px solid #ffe4e1; /* Misty Rose */
+            animation: bounceIn 1.2s ease-out;
+        }
+
+        /* Avatar atau Ikon Bulat */
+        .avatar {
+            width: 100px;
+            height: 100px;
+            background-color: #ffdae0;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            border: 3px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #ff8fa3; /* Soft Pink */
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        /* Tombol Imut */
+        .btn {
+            background-color: #ffb6c1;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4);
+        }
+
+        .btn:hover {
+            background-color: #ff9fb0;
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(255, 182, 193, 0.6);
+        }
+
+        /* Animasi Muncul */
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            70% { transform: scale(1.05); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="avatar">🌸</div>
+        <h1>Halo, Teman!</h1>
+        <p>Selamat datang di halaman kecilku yang penuh warna. Semoga harimu menyenangkan dan penuh kebahagiaan! ✨</p>
+        <a href="#" class="btn">Klik Aku! 🍬</a>
+    </div>
+
+</body>
+</html>
